@@ -1,0 +1,24 @@
+.box {
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+  border: 3px solid black;
+}
+/* @media (max-width: 500px) {
+  .box {
+    background-color: red;
+  }
+} */
+/* @media (min-width: 500px) {
+  .box {
+    background-color: red;
+    border: none;
+  }
+} */
+@media (min-width: 300px) and (max-width: 500px) {
+  .box {
+    background-color: red;
+    border: none;
+  }
+}
+/* this means minimum it should have 500px width then it comes to red */

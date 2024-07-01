@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.box {
+  border: 2px solid blue;
+  width: 50%;
+  /* Here width takes 50% of nearest parent which is main body */
+}
+.parent {
+  border: 2px solid black;
+  background-color: aqua;
+  width: 50%;
+}
+.child {
+  border: 2px solid red;
+  background-color: blueviolet;
+  width: 50%;
+  /* This child takes width of the parent div and parent div takes from their parent which is main body */
+}
+.container {
+  border: 2px solid red;
+  background-color: aquamarine;
+  width: 50vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+p {
+  border: 2px solid black;
+  font-size: 50px;
+}
+.container1 {
+  font-size: 10px;
+}
+.box {
+  font-size: 10rem;
+  /* here 10 multiply by contaider font size so box font size is 100px */
+}
+#one {
+  font-size: 10rem;
+  /* 16px*10 */
+  /* it means it takes font size based on its parent and its parent is body which is default and default font sixe is 16px */
+}

@@ -1,0 +1,32 @@
+.container {
+  border: 2px solid black;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid green;
+}
+@media (min-width: 0px) and (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+#box1 {
+  background-color: blue;
+}
+#box2 {
+  background-color: rgb(0, 255, 213);
+}
+#box3 {
+  background-color: rgb(132, 132, 227);
+}
+#box4 {
+  background-color: rgb(145, 255, 0);
+}
