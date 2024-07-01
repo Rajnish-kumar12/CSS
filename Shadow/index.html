@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: aquamarine;
+            width: 530px;
+            height: 500px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: -10px 15px 5px 10px brown;
+            /* first parameter x axis second parameter y axis third parameter blur radius  fourt parameter is spread radius*/
+            /* andar ke traf se shadow ke lye inset use krte h */
+        }
+
+        #heading1 {
+            text-shadow: 2px 3px rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="rajnish_image.jpeg" alt="rajnish image">
+            <h2 id="heading1">Welcome to Rajnish Profile</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet obcaecati labore aperiam temporibus.
+                Amet vero, sequi neque ducimus dignissimos sunt asperiores nisi alias quia optio deleniti voluptas qui
+                placeat non.</p>
+        </div>
+    </div>
+</body>
+
+</html>
