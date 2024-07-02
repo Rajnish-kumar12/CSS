@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  border: 10px solid rgb(9, 84, 94);
+  background-color: rgb(137, 189, 215);
+  position: relative;
+}
+.box1 {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 0.7rem;
+  border: 1px solid rgb(84, 4, 76);
+  background-color: rgb(228, 161, 3);
+  animation-name: box1;
+  position: relative;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.box2 {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 0.7rem;
+  border: 1px solid rgb(84, 4, 76);
+  background-color: rgb(228, 161, 3);
+  position: absolute;
+  bottom: 0%;
+  animation-name: box2;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+.circle {
+  box-sizing: border-box;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid rgb(84, 4, 76);
+  background-color: rgb(228, 161, 3);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 1.5%;
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes box1 {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: 89.5%;
+  }
+}
+@keyframes box2 {
+  from {
+    bottom: 0;
+    left: 0;
+  }
+  to {
+    bottom: 0;
+    left: 89.5%;
+  }
+}
+@keyframes circle {
+  0% {
+    bottom: 1.5%;
+    left: 0%;
+  }
+  25% {
+    bottom: 50%;
+    left: 95%;
+  }
+  50% {
+    bottom: 89.5%;
+    left: 55%;
+  }
+  75% {
+    bottom: 55%;
+    left: 0;
+  }
+  100% {
+    bottom: 1.5%;
+    left: 50%;
+  }
+}
