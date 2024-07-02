@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+  border: 5px solid black;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 80px;
+  background-color: blue;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  animation-name: rightmovement;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes rightmovement {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: 1000px;
+  }
+}
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 80px;
+  background-color: blue;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  animation-name: leftmovement;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+@keyframes leftmovement {
+  from {
+    top: 450px;
+    left: 0;
+  }
+  to {
+    top: 450px;
+    left: 1000px;
+  }
+}
+#circle {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 3px solid yellow;
+  border-radius: 100%;
+  position: relative;
+  margin: 10px;
+  position: relative;
+  top: 80px;
+  left: 700px;
+  animation-name: circlemovement;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes circlemovement {
+  0% {
+    top: 50px;
+    left: 1000px;
+  }
+  25% {
+    top: 200px;
+    left: 10px;
+  }
+  50% {
+    top: 450px;
+    left: 300px;
+  }
+  100% {
+    top: 450px;
+    left: 100px;
+  }
+}
