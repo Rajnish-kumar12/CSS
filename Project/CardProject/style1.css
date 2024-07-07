@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  box-sizing: border-box;
+  width: 25%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px rgb(108, 103, 103);
+}
+.box img {
+  width: 100%;
+  height: 30%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.content {
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  background-color: white;
+  justify-content: space-around;
+  border-radius: 1rem;
+}
+.music {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid green;
+  background-color: cadetblue;
+  border-radius: 1rem;
+  margin-top: 10px;
+  box-shadow: 1px 1px 20px rgb(95, 158, 149);
+}
+.music img {
+  width: 20%;
+  height: 50%;
+  border-radius: 1rem;
+}
+.button {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  border-radius: 1rem;
+}
+.Proceed {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #00416a;
+  border-radius: 0.5rem;
+  color: white;
+}
+.cancel {
+  background-color: white;
+  border-radius: 1rem;
+  border-style: none;
+  color: black;
+  font-weight: bold;
+}
