@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(109, 105, 105);
+  display: grid;
+  padding: 3rem;
+  gap: 0.4rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  border: 2px solid wheat;
+  /* justify-items: center;
+  justify-items: start;
+  justify-items: end;
+  align-items: center;
+  align-items: start;
+  align-items: end;
+  place-items: start; */
+  /* this work for all once */
+}
+.item {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background-color: blueviolet;
+  /* justify-self: end;
+  justify-self: start;
+  justify-self: center;
+  justify-self: stretch;  justify self work on x axis*/
+  /* alignself work as y axis */
+  /* place-self: center; vertical horizontal take both */
+  /* justify and align shows how item display in shell */
+}

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: aquamarine;
+  border: 5px solid black;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.5rem;
+}
+.item {
+  border: 3px solid red;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 20px red;
+}
+.header {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+.headertwo {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+.header3 {
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.header4 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.header5 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+.header6 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.header8 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.header9 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.header10 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 7;
+  grid-column-end: 10;
+}
+.header11 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 10;
+  grid-column-end: 13;
+}
+.header12 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.header13 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.header14 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+.header15 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 7;
+  grid-column-end: 9;
+}
+.header16 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 9;
+  grid-column-end: 11;
+}
+.header17 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 11;
+  grid-column-end: 13;
+}

@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  max-width: 70vw;
+  padding: 2rem 1rem;
+  /* above padding from top and bottom it take 2 rem and from left and right it takes 1 rem */
+  margin: 0 auto;
+  /* above margin from top and bottom it takes 0 and from left and right it goes in center because of auto */
+}
+a {
+  text-decoration: none;
+}
+.header_container {
+  margin-bottom: 2.5rem;
+}
+.header_title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: rgb(109, 94, 94);
+  line-height: 2rem;
+  text-align: center;
+}
+.header_desc {
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto;
+  color: rgb(6, 80, 55);
+}
+.main_container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 810px) {
+  .main_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .main_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1400px) {
+  .main_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card_container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card_image_container {
+  position: relative;
+  overflow: hidden;
+  height: 14rem;
+}
+.card_image {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.card_title_container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.card_container:hover .card_image {
+  transform: scale(1.1);
+  transition-duration: 250ms;
+}
+.card_title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(226, 18, 18);
+  line-height: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.card_title_anchor:hover .card_title {
+  color: blue;
+}
+.card_desc {
+  color: rgb(131, 110, 110);
+  font-size: 1rem;
+}
+.card_footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.author_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.author_avtar_container {
+  border-radius: 50%;
+}
+.author_avtar {
+  width: 3rem;
+  border-radius: 50%;
+}
+.author_info_container_name {
+  color: blue;
+}
+.author_info_container_date {
+  color: rgb(177, 35, 35);
+}
+.card_tag_container {
+  font-size: 0.9rem;
+  border: 1px solid rgb(82, 78, 78);
+  border-radius: 0.3rem;
+  line-height: 1.3rem;
+}
